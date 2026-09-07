@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Java - Acerca de</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2c2c2c;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        nav {
+            background-color: #4a752c;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            border-bottom: 4px solid #3b5e22;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #3b5e22;
+        }
+        nav a.active {
+            background-color: #2e4a1a;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background-color: #3a3a3a;
+            border-bottom: 3px solid #4a752c;
+        }
+        header h1 {
+            font-size: 42px;
+            color: #5db831;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+            color: #b0b0b0;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: #3a3a3a;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #4a752c;
+        }
+        section h2 {
+            color: #5db831;
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+        section p {
+            font-size: 16px;
+            color: #cccccc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table th, table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #555555;
+        }
+        table th {
+            background-color: #4a752c;
+            color: #ffffff;
+        }
+        table td {
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="about.html" class="active">Acerca de</a>
+        <a href="contact.html">Contacto</a>
+    </nav>
+
+    <header>
+        <h1>&#128214; Acerca de Minecraft Java</h1>
+        <p>Historia, evolución y datos relevantes sobre la edición original.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Historia del Juego</h2>
+            <p>
+                Minecraft fue creado por Markus "Notch" Persson y su primera versión pública
+                (Classic) fue lanzada el 17 de mayo de 2009. Tras un período de desarrollo
+                en fase alfa y beta, la versión 1.0 fue publicada oficialmente el 18 de
+                noviembre de 2011 durante la MineCon. En 2014, Microsoft adquirió Mojang
+                Studios por 2 500 millones de dólares, garantizando la continuidad del
+                proyecto y su expansión a nuevas plataformas.
+            </p>
+        </section>
+
+        <section>
+            <h2>¿Por qué Java Edition?</h2>
+            <p>
+                La edición Java se distingue de Bedrock Edition por su arquitectura abierta
+                y su ecosistema comunitario. A diferencia de Bedrock, que está diseñada para
+                la compatibilidad multiplataforma, Java Edition ofrece un control sin
+                precedentes sobre la experiencia de juego: desde la modificación del código
+                fuente mediante loaders como Forge y Fabric, hasta la creación de servidores
+                con miles de jugadores simultáneos.
+            </p>
+        </section>
+
+        <section>
+            <h2>Hitos Importantes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Versión</th>
+                        <th>Nombre</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.0</td>
+                        <td>Lanzamiento oficial</td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td>1.7.2</td>
+                        <td>The Update that Changed the World</td>
+                        <td>2013</td>
+                    </tr>
+                    <tr>
+                        <td>1.12</td>
+                        <td>World of Color Update</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>1.16</td>
+                        <td>Nether Update</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>1.18</td>
+                        <td>Caves &amp; Cliffs (Parte II)</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>1.21</td>
+                        <td>Tricky Trials</td>
+                        <td>2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>

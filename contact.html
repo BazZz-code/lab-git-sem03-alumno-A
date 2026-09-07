@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Java - Contacto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2c2c2c;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        nav {
+            background-color: #4a752c;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            border-bottom: 4px solid #3b5e22;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #3b5e22;
+        }
+        nav a.active {
+            background-color: #2e4a1a;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background-color: #3a3a3a;
+            border-bottom: 3px solid #4a752c;
+        }
+        header h1 {
+            font-size: 42px;
+            color: #5db831;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+            color: #b0b0b0;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: #3a3a3a;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #4a752c;
+        }
+        section h2 {
+            color: #5db831;
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+        section p {
+            font-size: 16px;
+            color: #cccccc;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            color: #e0e0e0;
+            font-size: 15px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            padding: 12px;
+            border: 2px solid #555555;
+            border-radius: 5px;
+            background-color: #2c2c2c;
+            color: #e0e0e0;
+            font-size: 15px;
+            font-family: inherit;
+        }
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #5db831;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        button {
+            padding: 14px 30px;
+            background-color: #4a752c;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            align-self: flex-start;
+        }
+        button:hover {
+            background-color: #5db831;
+        }
+        .info-contacto {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .info-item {
+            background-color: #2c2c2c;
+            padding: 15px 20px;
+            border-radius: 6px;
+            flex: 1;
+            min-width: 200px;
+        }
+        .info-item strong {
+            color: #5db831;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Acerca de</a>
+        <a href="contact.html" class="active">Contacto</a>
+    </nav>
+
+    <header>
+        <h1>&#9993; Contacto</h1>
+        <p>Estamos a su disposición para cualquier consulta o sugerencia.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Envíenos un Mensaje</h2>
+            <p>
+                Complete el siguiente formulario y nos pondremos en contacto con usted
+                a la mayor brevedad posible.
+            </p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: David García" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ej: david@ejemplo.com" required>
+
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto">
+                    <option value="general">Consulta general</option>
+                    <option value="soporte">Soporte técnico</option>
+                    <option value="mods">Modificaciones y plugins</option>
+                    <option value="servidor">Configuración de servidor</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Información de Contacto</h2>
+            <div class="info-contacto">
+                <div class="info-item">
+                    <strong>Correo Electrónico</strong>
+                    contacto@minecraftjava.ejemplo
+                </div>
+                <div class="info-item">
+                    <strong>Comunidad Discord</strong>
+                    discord.gg/minecraftjava-ejemplo
+                </div>
+                <div class="info-item">
+                    <strong>Horario de Atención</strong>
+                    Lunes a Viernes, 9:00 – 18:00 (CET)
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
